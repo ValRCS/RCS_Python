@@ -9,6 +9,7 @@ uifile = os.path.join(os.getcwd(), 'UI', 'main.ui')
 print(uifile)
 form, base = uic.loadUiType(uifile)
 
+
 class Example(base, form):
     def __init__(self):
         super(base,self).__init__()
@@ -16,7 +17,12 @@ class Example(base, form):
         self.actionQuit.triggered.connect(self.actionQuit_slot)
         self.radioButton_2.toggled.connect(self.radioButton_2_slot)
         self.horizontalSlider.valueChanged.connect(self.valuechange_slot)
+        self.dial.valueChanged.connect(self.dial_slot)
         #.valueChanged.connect(self.valuechange)
+
+    def dial_slot(self):
+        print(f'Dial value {self.dial.value()}')
+        self.lcdNumber.display(self.dial.value())
 
     def actionQuit_slot(self):
         print('Going to Quit Seriously!')
