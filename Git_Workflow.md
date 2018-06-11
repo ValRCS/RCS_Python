@@ -7,3 +7,6 @@
 * git fetch + git merge pulls changes from default origin(this repo) into your local repo and merges them 
 
 
+### Various workflows: https://www.atlassian.com/git/tutorials/comparing-workflows
+
+
