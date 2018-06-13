@@ -20,6 +20,8 @@
 * cd to Projectdirectory
 * git reset --hard SHA1 where SHA1 is SHA1 of the revision you want
 
+* git pull to get back to HEAD revision
+
 
 ### Various workflows: https://www.atlassian.com/git/tutorials/comparing-workflows
 
